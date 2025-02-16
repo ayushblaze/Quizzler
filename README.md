@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Quizzler: React Quiz Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+Quizzler is an interactive React-based quiz application that tests users' knowledge with a dynamic, engaging interface. The app features a point system, progress tracking, and immediate feedback on answers.
 
-## Available Scripts
+## Features
+- 🎯 Point-based scoring system
+- 📊 Progress bar to track quiz advancement
+- 🌈 Dynamic answer highlighting (correct/incorrect)
+- 🚀 Smooth navigation with Next button
+- 📱 Responsive design
 
-In the project directory, you can run:
+## Technologies Used
+- React
+- React Hooks (useReducer, useEffect)
+- JSON for question data management
 
-### `npm start`
+## Project Structure
+```
+quizzler/
+│
+├── src/
+│   ├── components/
+│   │   ├── App.js          # Main application component
+│   │   ├── Header.js       # App header
+│   │   ├── Main.js         # Main content wrapper
+│   │   ├── Progress.js     # Quiz progress bar
+│   │   ├── Question.js     # Individual question component
+│   │   ├── Options.js      # Answer options component
+│   │   ├── NextButton.js   # Navigation button
+│   │   └── ...
+│   │
+│   ├── index.js
+│   └── index.css
+│
+└── data/
+    └── questions.json      # Quiz questions database
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How It Works
+1. The app loads questions from a JSON file
+2. Users start the quiz and answer questions
+3. Points are awarded for correct answers
+4. Progress is tracked visually
+5. Users can navigate through questions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
+- Node.js
+- npm or yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
+1. Clone the repository
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+3. Start the development server
+   ```bash
+   npm start
+   ```
 
-### `npm run build`
+## Quiz Mechanics
+- Each question has a point value
+- Correct answers increase the total points
+- A progress bar shows quiz completion
+- Next button allows moving to subsequent questions
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Future Improvements
+- Add more question categories
+- Implement difficulty levels
+- Create a leaderboard
+- Add timer functionality
